@@ -1928,6 +1928,7 @@ GameObject:
   - component: {fileID: 1986380934}
   - component: {fileID: 1303167529}
   - component: {fileID: 4342030205166678966}
+  - component: {fileID: 1639004307}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2050,7 +2051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallJumpInputName: Jump
-  wallJumpForce: {x: 0, y: 10, z: -10}
+  wallJumpForce: {x: 0, y: 10, z: -6}
   wallJumpLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -2097,7 +2098,7 @@ MonoBehaviour:
   resetVelocityOnAirJump: 0
   useCollisionCheck: 1
   collisionOffset: {x: 0, y: 0, z: 0}
-  collisionCheckRadius: 0.5
+  collisionCheckRadius: 1
   jumpFX: {fileID: 0}
   airJumpFX: {fileID: 0}
   fxOffset: {x: 0, y: 0, z: 0}
@@ -2110,6 +2111,55 @@ MonoBehaviour:
   characterHeight: 1.2
   displayDebugInfo: 1
   inputChoiceIndex: 5
+--- !u!114 &1639004307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440060697263794143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2804f4892955a3243bf76a2da339f0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLife: 10
+  maxLife: 10
+  currentLife: 10
+  onDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8440060697263794143}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level13
+          m_BoolArgument: 0
+        m_CallState: 2
+  displayDebugInfo: 0
+  invincibilityDuration: 0.25
+  animator: {fileID: 0}
+  hitParameterName: Hit
 --- !u!1 &8962553743601244173
 GameObject:
   m_ObjectHideFlags: 0
