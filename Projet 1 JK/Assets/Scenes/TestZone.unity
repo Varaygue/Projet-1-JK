@@ -717,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &35376034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3025,6 +3025,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256702167}
   m_Mesh: {fileID: 5060444177187149915, guid: ac892ba17b27cd9429c1699e38b78897, type: 3}
+--- !u!1 &258300579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7509686745620528378, guid: 060faf1985d6d8640af3c48ad075d0a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4463348173227718590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267436711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,7 +4904,6 @@ GameObject:
   - component: {fileID: 554485524}
   - component: {fileID: 554485523}
   - component: {fileID: 554485522}
-  - component: {fileID: 554485526}
   m_Layer: 0
   m_Name: Tue
   m_TagString: Tue
@@ -4984,26 +4989,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &554485526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554485521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd6bf345a734d934480925f4a254e2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportPoint: {fileID: 425545615}
-  offset: {x: 0, y: 0, z: 0}
-  useTag: 1
-  tagName: Player
-  requireInput: 0
-  inputName: Fire1
-  displayTeleportPoint: 1
-  inputChoiceIndex: 0
 --- !u!1 &555266036
 GameObject:
   m_ObjectHideFlags: 0
@@ -19090,12 +19075,32 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 4463348173227718590}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 258300579}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2804f4892955a3243bf76a2da339f0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9096759603641153891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258300579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6bf345a734d934480925f4a254e2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPoint: {fileID: 554485525}
+  offset: {x: 0, y: 0, z: 0}
+  useTag: 1
+  tagName: Projectile
+  requireInput: 0
+  inputName: Fire1
+  displayTeleportPoint: 1
+  inputChoiceIndex: 0
 --- !u!4 &9100161525860522274
 Transform:
   m_ObjectHideFlags: 0

@@ -2930,6 +2930,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4342030205166678966, guid: a9adbed3287614047a8dd836d1961c1a,
+        type: 3}
+      propertyPath: jumpEndYVelocity
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342030205166678966, guid: a9adbed3287614047a8dd836d1961c1a,
+        type: 3}
+      propertyPath: fallGravityMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342030205166678966, guid: a9adbed3287614047a8dd836d1961c1a,
+        type: 3}
+      propertyPath: lowJumpGravityMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8440060697263794136, guid: a9adbed3287614047a8dd836d1961c1a,
         type: 3}
       propertyPath: m_RootOrder

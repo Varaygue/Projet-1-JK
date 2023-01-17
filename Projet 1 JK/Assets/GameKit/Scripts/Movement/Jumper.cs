@@ -45,9 +45,9 @@ public class Jumper : MonoBehaviour
 
 	//[Header("FX")]
 	[Tooltip("Visual/Sound FX Instantiated on jump")]
-	public GameObject jumpFX = null;
+    [SerializeField] private GameObject jumpFX = null;
 	[Tooltip("Visual/Sound FX Instantiated on air jump")]
-	public GameObject airJumpFX = null;
+    [SerializeField] private GameObject airJumpFX = null;
 	[Tooltip("Offset from the pivot when Instantiating FX")]
 	[SerializeField] private Vector3 fxOffset = Vector3.zero;
 	[Tooltip("Lifetime of the Instantiated FX. 0 = Do not destroy")]
@@ -287,6 +287,6 @@ public class Jumper : MonoBehaviour
 		}
 
 		Gizmos.color = Helper.GroundCheck(checkPosition, collisionOffset, transform, collisionCheckRadius, jumpLayerMask) ? Color.blue : Color.red;
-		Gizmos.DrawWireSphere(checkPosition, collisionCheckRadius);
+		Gizmos.DrawWireSphere(checkPosition + collisionOffset, collisionCheckRadius);
 	}
 }

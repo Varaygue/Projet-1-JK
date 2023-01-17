@@ -7,6 +7,7 @@ TagManager:
   - Collectible
   - Tue
   - Scie
+  - Projectile
   layers:
   - Default
   - TransparentFX

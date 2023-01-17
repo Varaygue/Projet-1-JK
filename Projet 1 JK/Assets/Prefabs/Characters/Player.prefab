@@ -1,68 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1563372239
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1563372240}
-  - component: {fileID: 1563372241}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1563372240
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563372239}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7167764274143427355}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1563372241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563372239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95f99d5f51a6649be31df169a3d006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shareOrientation: 0
-  displayDebugInfo: 1
-  prefabToSpawn:
-  - prefab: {fileID: 382799669302899605, guid: e44696d5316851d4db4625101a56b5d0, type: 3}
-    weight: 1
-  randomMinOffset: {x: 0, y: -3.3195019, z: 0}
-  randomMaxOffset: {x: 0, y: 0, z: 0}
-  useCooldown: 1
-  spawnCooldown: 1
-  useInput: 1
-  spawnInputName: Jump
-  spawnInsideParent: 1
-  parent: {fileID: 8440060697263794136}
-  requireResources: 0
-  resourceManager: {fileID: 0}
-  resourceIndex: 0
-  resourceCostOnUse: 1
-  destroyOnNoResourceLeft: 0
-  inputChoiceIndex: 5
 --- !u!1 &457404049242027367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1722,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 80622936686309470}
-  - {fileID: 1563372240}
   m_Father: {fileID: 8440060697263794136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1990,10 +1926,8 @@ GameObject:
   - component: {fileID: 803957257204415728}
   - component: {fileID: 1986380933}
   - component: {fileID: 1986380934}
-  - component: {fileID: 6834224665125737978}
   - component: {fileID: 1303167529}
-  - component: {fileID: 242918627}
-  - component: {fileID: 999112960}
+  - component: {fileID: 4342030205166678966}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2088,7 +2022,7 @@ MonoBehaviour:
   trackSpeed: 1
   speedParameterName: MoveSpeed
   animateWhenGroundedOnly: 1
-  collisionCheckRadius: 0.65
+  collisionCheckRadius: 0.5
   collisionOffset: {x: 0, y: 0.1, z: 0}
   groundLayerMask:
     serializedVersion: 2
@@ -2103,7 +2037,41 @@ MonoBehaviour:
   xInputChoiceIndex: 0
   yInputChoiceIndex: 0
   zInputChoiceIndex: 0
---- !u!114 &6834224665125737978
+--- !u!114 &1303167529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440060697263794143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89deb1c6283fb5043822ef2293aadb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallJumpInputName: Jump
+  wallJumpForce: {x: 0, y: 10, z: -10}
+  wallJumpLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  invertLookDirectionOnWallJump: 1
+  gravityDampenWhileOnWall: 2
+  preventMovingAfterWallJump: 1
+  movePreventionDuration: 1
+  mover: {fileID: 1986380934}
+  resetJumpCountOnWallJump: 1
+  jumper: {fileID: 0}
+  halfExtents: {x: 0.3, y: 0.9, z: 0.1}
+  minimalHeightAllowedToWallJump: 1.5
+  collisionOffset: {x: 0, y: 1, z: 0.5}
+  jumpFX: {fileID: 0}
+  jumpFXSpawnPoint: {fileID: 0}
+  fxOffset: {x: 0, y: 0, z: 0}
+  timeBeforeDestroyFX: 3
+  animator: {fileID: 7508295581983154594}
+  wallJumpTriggerName: wallJump
+  inputChoiceIndex: 5
+--- !u!114 &4342030205166678966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2128,13 +2096,13 @@ MonoBehaviour:
   airJumpForce: {x: 0, y: 7, z: 0}
   resetVelocityOnAirJump: 0
   useCollisionCheck: 1
-  collisionOffset: {x: 0, y: 1, z: 0}
-  collisionCheckRadius: 1
+  collisionOffset: {x: 0, y: 0, z: 0}
+  collisionCheckRadius: 0.5
   jumpFX: {fileID: 0}
   airJumpFX: {fileID: 0}
   fxOffset: {x: 0, y: 0, z: 0}
   timeBeforeDestroyFX: 3
-  animator: {fileID: 0}
+  animator: {fileID: 7508295581983154594}
   jumpTriggerName: jump
   airJumpTriggerName: jump
   currentJumpAmount: 0
@@ -2142,77 +2110,6 @@ MonoBehaviour:
   characterHeight: 1.2
   displayDebugInfo: 1
   inputChoiceIndex: 5
---- !u!114 &1303167529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440060697263794143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89deb1c6283fb5043822ef2293aadb4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallJumpInputName: Jump
-  wallJumpForce: {x: 0, y: 500, z: -400}
-  wallJumpLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
-  invertLookDirectionOnWallJump: 1
-  gravityDampenWhileOnWall: 2
-  preventMovingAfterWallJump: 1
-  movePreventionDuration: 1
-  mover: {fileID: 1986380934}
-  resetJumpCountOnWallJump: 1
-  jumper: {fileID: 0}
-  collisionCheckDistance: 1
-  minimalHeightAllowedToWallJump: 1.5
-  collisionOffset: {x: 0, y: 1, z: 0.1}
-  jumpFX: {fileID: 0}
-  fxOffset: {x: 0, y: 0, z: 0}
-  timeBeforeDestroyFX: 3
-  animator: {fileID: 7508295581983154594}
-  wallJumpTriggerName: wallJump
-  inputChoiceIndex: 5
---- !u!65 &242918627
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440060697263794143}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &999112960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8440060697263794143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2804f4892955a3243bf76a2da339f0b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startLife: 10
-  maxLife: 10
-  currentLife: 10
-  onDamageTaken:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-  displayDebugInfo: 0
-  invincibilityDuration: 0.25
-  animator: {fileID: 0}
-  hitParameterName: Hit
 --- !u!1 &8962553743601244173
 GameObject:
   m_ObjectHideFlags: 0

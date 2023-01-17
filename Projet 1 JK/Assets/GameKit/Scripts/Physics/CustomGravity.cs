@@ -97,9 +97,9 @@ public class CustomGravity : MonoBehaviour
 		return Physics.Raycast(transform.position, dir, out hit, collisionCheckDistance);
 	}
 
-	private void InvertGravity()
+	public void InvertGravity()
 	{
-		if (!Input.GetButtonDown(inputName) || rigid == null) return;
+		if (rigid == null) return;
 		
 		currentGravityForce = currentGravityForce == baseGravityForce ? secondaryGravityForce : baseGravityForce;
 		
@@ -145,8 +145,8 @@ public class CustomGravity : MonoBehaviour
 	private void Update()
 	{
 		if (!invertOnInput) return;
-
 		if (onlyWhenGrounded && !GroundCheck()) return;
+		if (!Input.GetButtonDown(inputName)) return;
 
 		InvertGravity();
 	}

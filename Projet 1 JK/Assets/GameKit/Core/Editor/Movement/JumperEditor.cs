@@ -58,7 +58,7 @@ public class JumperEditor : Editor
 
 		jumpFX = serializedObject.FindProperty("jumpFX");
 		airJumpFX = serializedObject.FindProperty("airJumpFX");
-		FXOffset = serializedObject.FindProperty("FXOffset");
+		FXOffset = serializedObject.FindProperty("fxOffset");
 		timeBeforeDestroyFX = serializedObject.FindProperty("timeBeforeDestroyFX");
 
 		animator = serializedObject.FindProperty("animator");
