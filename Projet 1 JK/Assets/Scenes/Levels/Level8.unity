@@ -9440,7 +9440,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307169102}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &299789149
 MeshCollider:
@@ -10114,7 +10114,6 @@ RectTransform:
   - {fileID: 343244647}
   - {fileID: 1073929348}
   - {fileID: 1511698040}
-  - {fileID: 1017056068}
   - {fileID: 299789148}
   - {fileID: 1961930601}
   - {fileID: 1196027880}
@@ -15054,7 +15053,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307169102}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &481342602
 Mesh:
@@ -35095,10 +35094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236d36e2048545a46b44480dbf3b12af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level9
+  sceneToLoad: Level10
   useTag: 1
   tagName: Player
-  sceneChoiceIndex: 10
+  sceneChoiceIndex: 11
 --- !u!65 &1017056065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35170,12 +35169,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017056063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -509, y: -98, z: -1}
+  m_LocalPosition: {x: 72, y: -40, z: -1}
   m_LocalScale: {x: 4, y: 4, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 307169102}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1019403191
 Mesh:
@@ -39491,7 +39490,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307169102}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1196027881
 MeshCollider:
@@ -56458,7 +56457,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41588
+  m_Name: pb_Mesh45972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -61468,7 +61467,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307169102}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1961930602
 MeshCollider:
