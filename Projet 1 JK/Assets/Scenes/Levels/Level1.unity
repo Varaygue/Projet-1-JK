@@ -16640,6 +16640,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc8fa4f90cdd02349b62e4d0cb2791cc, type: 3}
+--- !u!1 &1013293331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8672448612577262002, guid: e2c71bbbe6adf9f4d9e559f066f638ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1594847399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1013293334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013293331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000002, z: 10.000001}
+  m_Center: {x: 0, y: -0.000000834465, z: 5.0000005}
 --- !u!4 &1014254199 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5404188677459135643, guid: 38b1a19a557b0d94faa9dc2254ebe3e3,
@@ -18053,7 +18072,7 @@ Transform:
   m_Children:
   - {fileID: 594711842}
   m_Father: {fileID: 1988970470}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -82.699, y: 0, z: -90.352}
 --- !u!23 &1111457565
 MeshRenderer:
@@ -31905,7 +31924,7 @@ Transform:
   - {fileID: 1397568475}
   - {fileID: 279119310}
   m_Father: {fileID: 1988970470}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -82.699, y: 0, z: -90.352}
 --- !u!23 &1967160949
 MeshRenderer:
@@ -32205,10 +32224,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7158845555323685199}
   - {fileID: 8790528647502305974}
   - {fileID: 1967160948}
   - {fileID: 1111457564}
+  - {fileID: 7158845555323685199}
   - {fileID: 750812386418171433}
   - {fileID: 565596184}
   - {fileID: 1595007577}
@@ -38014,7 +38033,7 @@ Transform:
   m_Children:
   - {fileID: 1741946906}
   m_Father: {fileID: 1988970470}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -82.699, y: 0, z: -90.352}
 --- !u!23 &8790528647502305975
 MeshRenderer:
