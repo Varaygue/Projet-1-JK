@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a8ce9ba3bcdf0534585e63cdc88af556
   - enabled: 1
-    path: "Assets/Scenes/Cin\xE9matiqueIntro.unity"
-    guid: 820e19778d2a4d94686ff2bb27b6a9d7
-  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: b72f97febcb15ae46a8606362f85e249
   - enabled: 1
@@ -35,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level8.unity
     guid: 6e618e27a7661e0468d3b5e12f7a23f7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/Level10.unity
     guid: 3bbdb5ce36553714ebac170e3577d1ab
@@ -59,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level16.unity
     guid: 09d43b9e155c9484ab96aae41a678e45
+  - enabled: 1
+    path: Assets/Scenes/Levels/Fin.unity
+    guid: 9b6b0a8d889fd5d44b6bb86b99ca4d1d
   m_configObjects: {}

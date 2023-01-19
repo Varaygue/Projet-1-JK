@@ -28249,10 +28249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236d36e2048545a46b44480dbf3b12af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: Fin
   useTag: 1
   tagName: Player
-  sceneChoiceIndex: 0
+  sceneChoiceIndex: 16
 --- !u!65 &815211577
 BoxCollider:
   m_ObjectHideFlags: 0

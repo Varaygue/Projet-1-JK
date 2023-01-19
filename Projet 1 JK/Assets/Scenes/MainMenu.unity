@@ -499,7 +499,7 @@ PrefabInstance:
     - target: {fileID: 7482265578994486659, guid: f3c981f0ee508f647b62f3e18c0c1e93,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: "Cin\xE9matiqueIntro"
+      value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 7482265579372064508, guid: f3c981f0ee508f647b62f3e18c0c1e93,
         type: 3}
